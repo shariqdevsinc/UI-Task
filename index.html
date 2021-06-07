@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width,initial-scale=1.0'>
+    <link rel='stylesheet' href='style.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+	</head>
+
+	<body>
+		<div class='container'>
+			<address>
+				📞 (+92)333444555      📍 DHA Lahore
+			</address>
+		</div>
+    <div class='topnav' id='myTopnav' >
+			<form>
+				<input type='text' class='bar' placeholder='Search'>
+			</form>
+			<img src='logo.jpg' id='cover5' alt=''>
+			<a href='javascript:void(0);' class='iconn' onclick='myFunction()'>
+    		<i class='fa fa-bars'>
+				</i>
+			<div class="dropdown">
+				<button class="dropbtn">Shortcodes 
+				  <i class="fa fa-caret-down"></i>
+				</button>
+				<div class="dropdown-content">
+				  <a href="#contact">Page 5</a>
+				</div>
+			</div> 
+			<div class="dropdown">
+				<button class="dropbtn">Features
+				  <i class="fa fa-caret-down"></i>
+				</button>
+				<div class="dropdown-content">
+				  <a href="#contact">Page 4</a>
+				</div>
+			</div> 
+			<div class="dropdown">
+				<button class="dropbtn">Blog 
+				  <i class="fa fa-caret-down"></i>
+				</button>
+				<div class="dropdown-content">
+				  <a href="#contact">Page 3</a>
+				</div>
+			</div> 
+			<div class="dropdown">
+				<button class="dropbtn">Portfolio 
+				  <i class="fa fa-caret-down"></i>
+				</button>
+				<div class="dropdown-content">
+				  <a href="#portfolio">Page 2</a>
+				</div>
+			</div> 
+			<div class="dropdown">
+				<button class="dropbtn">Pages 
+				  <i class="fa fa-caret-down"></i>
+				</button>
+				<div class="dropdown-content">
+				  <a href="#contact">Page 1</a>
+				</div>
+			</div> 
+			<div class="dropdown">
+				<button class="dropbtn">Home 
+				  <i class="fa fa-caret-down"></i>
+				</button>
+				<div class="dropdown-content">
+				  <a href="#">Home 1</a>
+				</div>
+			</div> 
+			</a>
+		</div>
+		<div id="myResponsiveNav">
+			<a id="hid" style="display: none;" href="#" onclick="myFunction()">
+				HOME
+			</a>
+			<a id="hidd" style="display: none; position:relative;" href="#contact" onclick="myFunction()">
+				PORTFOLIO
+			</a>
+			<a id="hiddd" style="display: none;" href="#about"onclick="myFunction()">
+				SHOP
+			</a>
+		</div>
+
+    <script>
+        function myFunction() {
+          var x = document.getElementById('myTopnav');
+		  var a = document.getElementById('hid');
+		  var b = document.getElementById('hidd');
+		  var c = document.getElementById('hiddd');
+		  var d = document.getElementById('hidddd');
+          if (x.className === 'topnav') {
+            x.className += ' responsive';
+			a.style.display = 'block';
+			b.style.display = 'block';
+			c.style.display = 'block';
+			d.style.display = 'block';
+          } else {
+            x.className = 'topnav';
+			a.style.display = 'none';
+			b.style.display = 'none';
+			c.style.display = 'none';
+			d.style.display = 'none';
+          }
+		  
+        }
+			function openCity(evt, state) {
+				var i, tabcontent, tablinks, initialimage;
+				initialimage=document.getElementsByClassName('initialimage');
+				initialimage[0].style.display='none';
+				tabcontent = document.getElementsByClassName('tabcontent');
+				for (i = 0; i < tabcontent.length; i++) {
+					tabcontent[i].style.display = 'none';
+				}
+				tablinks = document.getElementsByClassName('tablinks');
+				for (i = 0; i < tablinks.length; i++) {
+					tablinks[i].className = tablinks[i].className.replace(' active', '');
+				}
+				document.getElementById(state).style.display = 'block';
+				evt.currentTarget.className += ' active';
+			
+			}
+    </script>
+        
+    <div class= 'bk' >
+			<form class='bar2'>
+				<input type='text' placeholder='Search'>
+			</form>
+			<br>
+    	<img src='cover.jpg' id='cover' alt='Cover'>
+			<a id='about'>
+			</a>
+    	<h1>
+				Who We Are
+			</h1>
+    	<h3>
+				The professionals you want for your businesses
+			</h3>
+    	<div class='tab'>
+				<button class='tablinks active' onclick="openCity(event, 'company')">The Company</button>
+				<button class='tablinks' onclick="openCity(event, 'philo')">Our Philosophy</button>
+				<button class='tablinks' onclick="openCity(event, 'mission')">Our Mission</button>
+			</div>
+			<div class='initialimage'>
+				<img src='company.jpg' id='cover' alt='Company'>
+				<p>
+					Testing text.(.......................) 1.(.......................) 
+				</p>
+			</div>
+			<div id='company' class='tabcontent'>
+				<img src='company.jpg' id='cover' alt='Company'>
+				<p>
+					Testing text.(.......................) 1.(.......................) 
+				</p>
+			</div>
+			
+			<div id='philo' class='tabcontent'>
+				<img src='phi.jpg' id='cover' alt='phi'>
+				<p>
+					Testing text.(.......................) 2.(.......................)
+				</p>
+			</div>
+			
+			<div id='mission' class='tabcontent'>
+				<img src='mis.jpg' id='cover' alt='mission'>
+				<p>
+					Testing text.(.......................) 3.(.......................)
+				</p>
+			</div>
+		</div>
+		<a id='services'>
+		</a>
+		<div class='container'>
+    	<h1>
+				What We Do
+			</h1>
+    	<h3>
+				We provide you with the best solutions to excel your businesses.
+			</h3>
+			<div id='Footercontainer'>
+				<div id='leftThing'>
+          <b>
+					  🛠 Web Design
+					</b>
+          <br>
+          We will design your web.
+        </div>
+      	<div id='leftmid'>
+          	<b>
+							📷 Branding
+						</b>
+          	<br>
+							We will do branding for your product.
+        </div>
+				<div id='rightmid'>
+          <b>
+						🔧 Web Development
+						</b>
+          	<br>
+						We will be developing your website.
+        </div>
+      	<div id='rightThing'>
+            <b>
+							🔎 SEO
+						</b>
+            <br>
+							We will be making your product appear first.
+        </div>
+      </div>
+	  <div id='Footercontainer'>
+				<div id='leftmid'>
+          <b>
+					  🛠 Web Design
+					</b>
+          <br>
+          We will design your web.
+        </div>
+      	<div id='leftThing'>
+          	<b>
+							📷 Branding
+						</b>
+          	<br>
+							We will do branding for your product.
+        </div>
+				<div id='rightThing'>
+          <b>
+						🔧 Web Development
+						</b>
+          	<br>
+						We will be developing your website.
+        </div>
+      	<div id='rightmid'>
+            <b>
+							🔎 SEO
+						</b>
+            <br>
+							We will be making your product appear first.
+        </div>
+      </div>
+		</div>
+		<div class= 'bk' style='padding:10px;'>
+    	<a id='shop'>
+			</a>
+    	<h1>
+				Our Featured Product
+			</h1>
+			<div id='Footercontainer'>
+				<div id ='leftThing'><img title='WEBSITE' src='pro.png' id='cover1' alt='pro'><h3>WEBSITE</h3></div>
+				<div id ='leftmid'><img title='SOFTWARE'	src='so.jpg' id='cover2' alt='so'><h3 id='cover20'>SOFTWARE</h3></div>
+				<div id ='rightmid'><img title='MARKETING' src='mart.jpeg' id='cover1' alt='pro'><h3>MARKETING</h3></div>
+				<div id ='rightThing'><img title='SEO'	src='seo.jpg' id='cover2' alt='so'><h3 id='cover20'>SEO</h3></div>
+			</div>
+			<a id='portfolio'>
+			</a>
+			<div class='container'>
+    		<img title='TESTIMONIALS' src='long.jpg' id='cover2' alt='pro'>
+				<img title='OUR CLIENTS' src='mob.jpg' id='cover3' alt='pro'>
+			</div>
+			<h1>
+				Try the 
+					<span class='green'>
+						30 Day Free Trial
+					</span> 
+					With All Features
+			</h1>
+			<p>Your 30-day money back guarentee starts after your 30-day free trial.</p>
+			<button>GET STARTED</button>
+		</div>
+		<a id='contact'>
+		</a>
+		<div class='container'>
+			<h1 class='left'>
+			</h1>
+			<div id='Footercontainer'>
+				<div id='leftThing'>
+          			<b>
+					  From The Blog
+					</b>
+          <br>
+		  <br>
+						<img src='pizza.jpeg' id='cover4' alt='pizza'>
+						The pizza blog from nowhere <em>21-06-2021</em>
+						<br>
+						<br>
+						<img src='tour.jpeg' id='cover4' alt='tour'>
+						The tour blog from nowhere 
+						<em>21-06-2021</em>
+        </div>
+      	<div id='rightThing'>
+            <b>
+							Latest Tweets
+						</b>
+            <br>
+						Coming Soon 
+						<span class='green'>
+							twitter.com/shariq 
+						</span>
+						<br>
+						<em>
+							110 days ago
+						</em>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<a href='https://www.twitter.com'>
+							<button>
+								Follow US
+							</button>
+					</a>
+        </div>
+				<div id='rightmid'>
+					<b>
+						Join US on Facebook
+					</b>
+					<br>
+					<a href='https://www.fb.com'>
+						<img src='fb.png' class ='icon' alt='FB'>
+					</a>
+				</div>
+				<div id='leftmid'>
+					<b>
+						Newsletter
+					</b>
+					<br>
+					Sign Up to our Newsletter and get notified.
+					<br>
+					<br>
+					<form>
+						<input type='email' name='search' placeholder='Your email address'>
+					</form>
+					<br>
+					<br>
+					<br>
+					<br>
+					<button>
+						Subscribe
+					</button>
+				</div>
+      </div>
+		</div>
+		<footer>
+    	<div id='Footercontainer'>
+				<div id='leftThing'>
+          <b>
+						Shortly About Us
+					</b>
+          <br>
+          Testing text.(.......................) Testing text.(.......................)
+        </div>
+      	<div id='leftmid'>
+          <b>
+						Contact Us
+					</b>
+          <br>
+          info@devsinc.company
+					<br>
+					skype.name
+				</div>
+				<div id='rightmid'>
+          <b>
+						Visit US
+					</b>
+          <br>
+					<br>
+          <a href='https://maps.google.com'>
+						<button>
+							Open in Maps
+						</button>
+				</a>
+				</div>
+      	<div id='rightThing'>
+            <b>
+							Stay Connected
+						</b>
+            <br>
+            <a href='https://www.fb.com'>
+						<img src='fb.png' class ='icon' alt='FB'>
+					</a>
+          <a href='https://pk.linkedin.com/in/imshariq'>
+						<img src='lk.png' class ='icon' alt='LinkedIn'>
+					</a>
+        </div>
+      </div>
+		</footer>
+		<div class='container'>
+			<address>
+				2014. All Rights Reserved.
+			</address>
+		</div>
+	</body>
+</html>
