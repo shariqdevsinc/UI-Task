@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>UI Task</title>
+		<meta charset='UTF-8'>
+		<meta name='viewport' content='width=device-width,initial-scale=1.0'>
+		<link rel='stylesheet' href='style.css'>
+		<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+	</head>
+
+	<body>
+		<div class='container'>
+			<address>
+					📞 (+92)333444555      📍 DHA Lahore
+			</address>
+		</div>
+		<div class='top-nav' id='myTopnav' >
+			<input type='text' class='bar' placeholder='Search'>
+			<img src='logo.jpg' id='cover-5' alt=''>
+			<a href='javascript:void(0);' class='iconn'>
+			<i class='fa fa-bars'></i>
+			<div class='dropdown'>
+				<button class='dropbtn'>Shortcodes 
+					<i class='fa fa-caret-down'></i>
+				</button>
+				<div class='dropdown-content'>
+					<a href='#contact'>Page 5</a>
+				</div>
+			</div> 
+			<div class='dropdown'>
+				<button class='dropbtn'>Features
+					<i class='fa fa-caret-down'></i>
+				</button>
+				<div class='dropdown-content'>
+					<a href='#contact'>Page 4</a>
+				</div>
+			</div> 
+			<div class='dropdown'>
+				<button class='dropbtn'>Blog 
+					<i class='fa fa-caret-down'></i>
+				</button>
+				<div class='dropdown-content'>
+					<a href='#contact'>Page 3</a>
+				</div>
+			</div> 
+			<div class='dropdown'>
+				<button class='dropbtn'>Portfolio 
+					<i class='fa fa-caret-down'></i>
+				</button>
+				<div class='dropdown-content'>
+					<a href='#portfolio'>Page 2</a>
+				</div>
+			</div> 
+			<div class='dropdown'>
+				<button class='dropbtn'>Pages 
+					<i class='fa fa-caret-down'></i>
+				</button>
+				<div class='dropdown-content'>
+					<a href='#contact'>Page 1</a>
+				</div>
+			</div> 
+			<div class='dropdown'>
+				<button class='dropbtn'>Home 
+					<i class='fa fa-caret-down'></i>
+				</button>
+				<div class='dropdown-content'>
+					<a href='#'>Home 1</a>
+				</div>
+			</div> 
+			</a>
+		</div>
+		<div id='my-responsive-nav'>
+			<a id='hid' style='display: none;' href='#' onclick='myFunction()'>
+				HOME
+			</a>
+			<a id='hidd' style='display: none; position:relative;' href='#contact' onclick='myFunction()'>
+				PORTFOLIO
+			</a>
+			<a id='hiddd' style='display: none;' href='#about'onclick='myFunction()'>
+				SHOP
+			</a>
+			<a id='hidddd' style='display: none;' href='#about'onclick='myFunction()'>
+				PAGES
+			</a>
+			<a id='hiddddd' style='display: none;' href='#about'onclick='myFunction()'>
+				BLOG
+			</a>
+		</div>
+
+		<script>
+			function myFunction() {
+			var x = document.getElementById('myTopnav');
+			var a = document.getElementById('hid');
+			var b = document.getElementById('hidd');
+			var c = document.getElementById('hiddd');
+			var d = document.getElementById('hidddd');
+			var e = document.getElementById('hiddddd');
+			if (x.className === 'top-nav') {
+				x.className += ' responsive';
+				a.style.display = 'block';
+				b.style.display = 'block';
+				c.style.display = 'block';
+				d.style.display = 'block';
+				e.style.display = 'block';
+			} else {
+				x.className = 'top-nav';
+				a.style.display = 'none';
+				b.style.display = 'none';
+				c.style.display = 'none';
+				d.style.display = 'none';
+				e.style.display = 'none';
+				}
+			}
+			function openCity(evt, state) {
+				var i, tabcontent, tablinks, initialimage, initialtext, tabtext;
+				initialtext=document.getElementsByClassName('initial-text');
+				initialimage=document.getElementsByClassName('initial-image');
+				initialimage[0].style.display='none';
+				initialtext[0].style.display='block';
+				tabtext= document.getElementsByClassName('tab-text');
+				tabcontent = document.getElementsByClassName('tab-content');
+				
+				for (i = 0; i < tabtext.length; i++) {
+					tabtext[i].style.display = 'none';
+				}
+				for (i = 0; i < tabcontent.length; i++) {
+					tabcontent[i].style.display = 'none';
+				}
+				tablinks = document.getElementsByClassName('tablinks');
+				for (i = 0; i < tablinks.length; i++) {
+					tablinks[i].className = tablinks[i].className.replace(' active', '');
+				}
+				document.getElementById(state).style.display = 'block';
+				evt.currentTarget.className += ' active';
+			}
+		</script>	
+		<div class= 'bk' >
+			<form class='bar-2'>
+				<input type='text' placeholder='Search'>
+			</form>
+			<br>
+			<img src='cover.jpg' id='cover' alt='Cover'>
+			<a id='about'></a>
+			<h1>Who We Are</h1>
+			<p id='center'>The professionals you want for your businesses</p>
+			<div class='tab'>
+				<button class='tablinks active' onclick="openCity(event, 'company')">The Company</button><button class='tablinks' onclick="openCity(event, 'philo')">Our Philosophy</button><button class='tablinks' onclick="openCity(event, 'mission')">Our Mission</button><button class='tablinks' onclick="openCity(event, 'why')">Why Choose Us</button>
+			</div>
+			<div class="row">
+				<div class="column">
+					<div class='initial-image'>
+						<img src='company.jpg' id='cover' alt='Company'>
+					</div>
+					<div id='company' class='tab-content'>
+						<img src='company.jpg' id='cover' alt='Company'>
+					</div>
+					<div id='philo' class='tab-content'>
+						<img src='phi.jpg' id='cover' alt='phi'>
+					</div>
+					<div id='mission' class='tab-content'>
+						<img src='mis.jpg' id='cover' alt='mission'>
+					</div>
+					<div id='why' class='tab-content'>
+						<img src='why.png' id='cover' alt='mission'>
+					</div>
+				</div>
+			<div class="column">
+				<div class='initial-text'>
+					<p class='left'>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.</p>
+				</div>
+			</div>
+		</div>
+
+		<a id='services'></a>
+		<div class='container'>
+			<br>
+			<h2>What We Do</h2>
+			<p id='center'>We provide you with the best solutions to excel your businesses.</p>
+			<div id='footer-container'>
+				<div id='left-thing'>
+					<b>🛠 Web Design</b>
+					<br>We will design your web.HELLO WORLD
+				</div>
+					<div id='left-mid'>
+							<b>📷 Branding</b>
+							<br>
+							We will do branding for your product.HELLOoo WORLD
+				</div>
+				<div id='right-mid'>
+					<b>🔧 Web Development</b>
+				<br>
+						We will be developing your website. HELooOooo WORLD
+				</div>
+					<div id='right-thing'>
+						<b>🔎 SEO</b>
+						<br>
+						will be making your product appear first.HELLOoo WORLD
+				</div>
+			</div>
+			<div id='footer-container'>
+				<div id='left-mid'>
+				<b>🛠 Web Design</b>
+				<br>
+				We will design your web.HELLOooooooo WORLD
+				</div>
+				<div id='left-thing'>
+					<b>📷 Branding</b>
+					<br>We will do branding for your product.HELLOoo WORLD
+				</div>
+				<div id='right-thing'>
+					<b>🔧 Web Development</b>
+					<br>
+							We will be developing your website.HELLOooooo WORLD
+				</div>
+				<div id='right-mid'>
+					<b>🔎 SEO</b>
+					<br>
+					We will be making your product appear first.HELLOoo WORLD
+				</div>
+			</div>
+		</div>
+		<div class= 'bk' style='padding:10px;'>
+			<a id='shop'></a>
+			<h1>Our Featured Product</h1>
+			<div id='footer-container'>
+				<div id ='left-thing'><img title='WEBSITE' src='pro.png' id='cover-1' alt='pro'><h3>WEBSITE</h3></div>
+				<div id ='left-mid'><img title='SOFTWARE'	src='so.jpg' id='cover-2' alt='so'><h3 id='cover-20'>SOFTWARE</h3></div>
+				<div id ='right-mid'><img title='MARKETING' src='mart.jpeg' id='cover-1' alt='pro'><h3>MARKETING</h3></div>
+				<div id ='right-thing'><img title='SEO'	src='seo.jpg' id='cover-2' alt='so'><h3 id='cover-20'>SEO</h3></div>
+				</div>
+				<a id='portfolio'></a>
+				<div class='container'>
+				<img title='TESTIMONIALS' src='long.jpg' id='cover-2' alt='pro'>
+				<img title='OUR CLIENTS' src='mob.jpg' id='cover-3' alt='pro'>
+				</div>
+				<h1 class='trial'>Try the <span class='green'>30 Day Free Trial</span> With All Features <button class='hide' style="background-color:rgb(15, 161, 15); color: white; float: right;margin-right: 100px;">GET STARTED</button></h1>
+				<p class='small'>Your 30-day money back guarentee starts after your 30-day free trial.</p><button class='hide-2' style="background-color:rgb(15, 161, 15);color: white; margin-left: 30px;align-self: left;">GET STARTED</button>
+		</div>
+		<a id='contact'></a>
+		<div class='container'>
+			<h1 class='left'></h1>
+			<div id='footer-container-2'>
+				<div id='left-thing'>
+					<b>From The Blog</b>
+					<br>
+					<br>
+					<p><img src='pizza.jpeg' align='left' id='cover-4' alt='pizza'>The pizza blog from nowhere</p>
+					<em>21-06-2021</em>
+					<br>
+					<br>
+					<br>
+					<br>
+					<p><img src='tour.jpeg' align='left' id='cover-4' alt='tour'>The tour blog from nowhere</p>
+					<em>21-06-2021</em>
+				</div>
+				<div id='right-thing'>
+					<b>Latest Tweets</b><br><br><br>
+				Coming Soon 
+				<span class='blue'>
+					twitter.com/shariq 
+				</span>
+				<br>
+				<em>
+					110 days ago
+				</em>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<a href='https://www.twitter.com'>
+					<button id='bord' class='blue'>
+						Follow US
+					</button>
+				</a>
+				</div>
+				<div id='right-mid'>
+					<b>Join US on Facebook</b>
+					<br><br><br>
+					<a href='https://www.fb.com'>
+						<img src='fb.png' class ='icon' alt='FB'>
+					</a>
+				</div>
+				<div id='left-mid'>
+					<b>Newsletter</b>
+					<br><br><br>
+					Sign Up to our Newsletter and get notified.
+					<br>
+					<br>
+					<form>
+						<input type='text' name='search' placeholder='Email address'>
+					</form>
+					<br><br><br>
+					<button id='bord' style='color:darkslateblue;border-color: darkslateblue;'>
+						Subscribe
+					</button>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div id='footer-container-2'>
+				<div id='left-thing'>
+				<b>Shortly About Us</b><br><br><br>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+				</div>
+				<div id='left-mid'>
+					<b>Contact Us</b><br><br><br>📧 info@devsinc.company<br>📞 skype.name
+				</div>
+				<div id='right-mid'>
+					<b>Visit US</b>
+					<br>
+					<br>
+					<br>
+					<a>
+						<button id='bord'>Open in Maps</button>
+					</a>
+				</div>
+				<div id='right-thing'>
+						<b>Stay Connected</b>
+						<br><br><br>
+						<a href='https://www.fb.com'><img src='fb.png' class ='icon' alt='FB'></a>
+						<a href='https://pk.linkedin.com/in/imshariq'>
+						<img src='lk.png' class ='icon' alt='LinkedIn'></a>
+					</div>
+				</div>
+		</footer>
+			<div class='container'>
+				<address class='center'>
+					2014. All Rights Reserved.
+				</address>
+				</div>
+	</body>
+</html>
